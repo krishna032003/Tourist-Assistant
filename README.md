@@ -1,67 +1,36 @@
-# Tourist Assistant
+# 🌍 AI Tourist Assistant
 
-An interactive voice-enabled tourist guide that provides information about cities, landmarks, and destinations worldwide. This application uses OpenAI's GPT models for text generation and speech features for a natural conversation experience, along with RAG capabilities and Google Places API integration for real-time attraction information.
-
-![Tourist Assistant Screenshot](travel.jpg)
+This is a voice-enabled AI tourist assistant built with Python, Gradio, and Google's free-tier APIs. It can answer questions about locations, find nearby attractions, and even read information from a custom knowledge base.
 
 ## Features
 
-- Text-based chat interface for asking questions about tourist destinations
-- Voice input capability through microphone recording
-- Audio responses using OpenAI's text-to-speech technology
-- Clean, responsive user interface with Gradio
-- RAG (Retrieval-Augmented Generation) system using PDF knowledge base
-- Google Places API integration for real-time information about attractions
-- Set current location for contextual queries
-- Quick access to nearby attractions information
+- **Conversational AI:** Uses Google's Gemini model to provide natural answers.
+- **Voice-Enabled:** Supports both text and voice input (Speech-to-Text) and provides spoken responses (Text-to-Speech).
+- **Location Aware:** Integrates with the Google Places API to find nearby attractions.
+- **Knowledge Base (RAG):** Can read from PDF documents placed in the `knowledge-base` folder to answer specific questions.
 
-## Requirements
+## Setup
 
-- Python 3.9+
-- OpenAI API key
-- Google Places API key (optional, for location search features)
+1.  Clone this repository:
 
-## Installation
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+    cd YOUR_REPO_NAME
+    ```
 
-1. Clone this repository
-2. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Create a `.env` file in the project directory with your API keys:
-   ```
-   OPENAI_API_KEY=your_openai_api_key_here
-   GOOGLE_PLACES_API_KEY=your_google_places_api_key_here
-   ```
-4. (Optional) Add PDF files to the `knowledge-base/` directory to enhance the assistant's knowledge about specific locations
+2.  Install the required packages:
 
-## Running the Application
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Start the application by running:
+3.  Create a `.env` file in the main folder and add your API keys:
 
-```bash
-python tourist-assistant.py
-```
+    ```env
+    GOOGLE_API_KEY="YOUR_GEMINI_API_KEY"
+    GOOGLE_PLACES_API_KEY="YOUR_GOOGLE_PLACES_KEY"
+    ```
 
-The interface will automatically open in your default web browser. If it doesn't, navigate to the URL shown in the terminal (typically http://127.0.0.1:7860/).
+4.  (Optional) Add PDF files to the `knowledge-base` folder.
 
-## Usage
-
-1. Type your question about any tourist destination in the text box
-2. Or click the microphone button and speak your question
-3. The assistant will respond with text and spoken audio
-4. Set your current location using the "Set Location" feature
-5. Click "Nearby Attractions" to get information about attractions near your current location
-6. Use the "Refresh Knowledge Base" button to reload PDFs in the knowledge-base directory
-7. Use the "Clear" button to start a new conversation
-
-## Technologies Used
-
-- OpenAI GPT-4o Mini for chat completions
-- OpenAI Whisper for speech-to-text
-- OpenAI TTS for text-to-speech
-- Langchain for RAG implementation
-- FAISS for vector storage
-- Google Places API for location-based attraction information
-- Gradio for the web interface
-- pydub for audio processing
+5.  Run the `tourist.ipynb` notebook in VS Code or Jupyter.
