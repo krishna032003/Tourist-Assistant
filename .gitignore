@@ -1,0 +1,10 @@
+# Secret keys
+.env
+
+# Temporary audio files
+*.mp3
+*.wav
+
+# Python/Jupyter cache
+__pycache__/
+.ipynb_checkpoints/
