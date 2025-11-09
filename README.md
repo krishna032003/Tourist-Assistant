@@ -12,25 +12,25 @@ This is a voice-enabled AI tourist assistant built with Python, Gradio, and Goog
 ## Setup
 
 1.  Clone this repository:
-
+   
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-    cd YOUR_REPO_NAME
+    git clone [https://github.com/krishna032003/tourist-assistant.git](https://github.com/krishna032003/tourist-assistant.git)
+    cd tourist-assistant
     ```
 
-2.  Install the required packages:
+3.  Install the required packages:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-3.  Create a `.env` file in the main folder and add your API keys:
+4.  Create a `.env` file in the main folder and add your API keys:
 
     ```env
     GOOGLE_API_KEY="YOUR_GEMINI_API_KEY"
     GOOGLE_PLACES_API_KEY="YOUR_GOOGLE_PLACES_KEY"
     ```
 
-4.  (Optional) Add PDF files to the `knowledge-base` folder.
+5.  (Optional) Add PDF files to the `knowledge-base` folder.
 
-5.  Run the `tourist.ipynb` notebook in VS Code or Jupyter.
+6.  Run the `tourist.ipynb` notebook in VS Code or Jupyter.
